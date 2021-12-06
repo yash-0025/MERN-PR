@@ -1,10 +1,13 @@
-const express = require("express");
+const express = require("express")
 
-const app = express.Router();
+const app = express.Router()
 
+const api = require("./api.js")
 // Creating a get request handler for /.
-app.get("/", (req, res)=> {
-    res.json("Welcome to cC.")
+app.get("/", (req, res) => {
+  res.json("Welcome to cC.")
 })
 
-module.exports = app;
+app.use("/api", api)
+
+module.exports = app
