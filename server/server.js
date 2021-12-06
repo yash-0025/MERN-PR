@@ -1,1 +1,1 @@
-vconsole.log("HEllo from server");
+console.log("HEllo from server");
