@@ -10,11 +10,12 @@ const app = express()
 //^      Configure a Port
 const port = 5000
 
+// ! Importing root
+const root = require("./routes/root.js")
 
-// Creating a get server
-app.get("/", (req, res)=> {
-    res.json("Welcome to cC.")
-})
+//  Add the routes middleware
+app.use("/", root);
+
 
 //?      Listen to a port
 app.listen(port, () => {
