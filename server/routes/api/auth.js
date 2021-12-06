@@ -44,7 +44,7 @@ app.post("/login", (req, res) => {
   } else {
     res.status(400).json({
       Error:
-        "Both Username and Password fieds are supposed to be in a string values.",
+        "Both Username and Password fields are supposed to be in a string values.",
     })
   }
 })
