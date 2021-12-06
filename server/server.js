@@ -10,8 +10,13 @@ const app = express()
 //^      Configure a Port
 const port = 5000
 
-// ! Importing root
+// ! Importing routes
 const root = require("./routes/root.js")
+
+
+//  Adding Custom MIDDELEWARES
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //  Add the routes middleware
 app.use("/", root);
