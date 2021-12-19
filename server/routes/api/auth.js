@@ -49,4 +49,11 @@ app.post("/login", (req, res) => {
   }
 })
 
+// * Endpoint to logout the user
+
+app.post("/logout", (req,res) => {
+  CurrentUser = null;
+  res.status(204).json({message: "User logged out Successfully."})
+})
+
 module.exports = app
