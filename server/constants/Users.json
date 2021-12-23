@@ -9,6 +9,17 @@
             "Email": "yash@gmail.com",
             "Phone": 919876543210
         },
+        "Socials" : {
+            "Facebook" : null,
+            "Instagram" : null,
+            "Twitter" : null,
+            "LinkedIn" : null,
+            "Github" : null,
+            "StackOverflow" : null,
+            "Telegram" : null,
+            "Whatsapp" : null,
+            "Discord" : null
+        },
         "CreatedAt": "2021-12-06T16:16:23.945Z"
     },
     "John": {
@@ -20,6 +31,17 @@
         "Personal": {
             "Email": "john@gmail.com",
             "Phone": 918796543210
+        },
+        "Socials" : {
+            "Facebook" : null,
+            "Instagram" : null,
+            "Twitter" : null,
+            "LinkedIn" : null,
+            "Github" : null,
+            "StackOverflow" : null,
+            "Telegram" : null,
+            "Whatsapp" : null,
+            "Discord" : null
         },
         "CreatedAt": "2021-12-06T16:16:23.945Z"
     }

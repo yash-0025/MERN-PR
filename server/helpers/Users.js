@@ -20,7 +20,33 @@ const CheckUserNamePassword = (Username, Password) => {
 // console.log(CheckUserNamePassword("John"))
 //  console.log(CheckUserNamePassword("Deep"))
 
+const RegisterNewUser = (Username , Password, Name, Email) => {
+  const DefaultUser = {
+    Name,
+    Password ,
+    Role:"Student" ,
+    Verified:false,
+    Personal: {
+        Gender:null,
+        Email,
+        Phone: null
+    },
+    Socials : {
+        Facebook : null,
+        Instagram : null,
+        Twitter : null,
+        LinkedIn : null,
+        Github : null,
+        StackOverflow : null,
+        Telegram : null,
+        Whatsapp : null,
+        Discord : null
+    },
+    CreatedAt: new Date()
+};
+}
 
 module.exports = {
-    CheckUserNamePassword
+    CheckUserNamePassword,
+    RegisterNewUser
 };
