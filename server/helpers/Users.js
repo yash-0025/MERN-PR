@@ -21,6 +21,8 @@ const CheckUserNamePassword = (Username, Password) => {
 //  console.log(CheckUserNamePassword("Deep"))
 
 const RegisterNewUser = (Username , Password, Name, Email) => {
+
+  //  ! Default user template
   const DefaultUser = {
     Name,
     Password ,

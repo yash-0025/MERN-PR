@@ -16,6 +16,10 @@ app.get("/login", (req, res) => {
   }
 })
 
+//  ? Endpoint for registering a new user
+
+
+
 //  * For logging a User
 app.post("/login", (req, res) => {
   const { Username, Password } = req.body
