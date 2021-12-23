@@ -3,6 +3,8 @@ const Users = require("../constants/Users.json")
 
 const CheckUserNamePassword = (Username, Password) => {
   if (typeof Users[Username] !== "undefined") {
+      //  * Users doesn't exist
+      //  * Check if password is right or not
     if (Users[Username].Password === Password) {
         // * Correct Username and Password
         return Users[Username];
@@ -16,17 +18,13 @@ const CheckUserNamePassword = (Username, Password) => {
   }
 }
 
-//  console.log(CheckUserNamePassword("Yash"))
-// console.log(CheckUserNamePassword("John"))
-//  console.log(CheckUserNamePassword("Deep"))
-
-const RegisterNewUser = (Username , Password, Name, Email) => {
+const RegisterNewUser = (Username , Password, Name, Email,Role) => {
 
   //  ! Default user template
-  const DefaultUser = {
+  const NewUser = {
     Name,
     Password ,
-    Role:"Student" ,
+    Role,
     Verified:false,
     Personal: {
         Gender:null,
@@ -46,6 +44,14 @@ const RegisterNewUser = (Username , Password, Name, Email) => {
     },
     CreatedAt: new Date()
 };
+  //  &  Check if user exists or not
+  if (typeof Users[Username] !== "undefined"){
+    //  * User doesn't exist
+    //  * Add the new user to the data
+  }else{
+    // * User already exists.
+  }
+
 }
 
 module.exports = {
